@@ -1,0 +1,13 @@
+
+<h1 style="color: red;">Data Binding</h1>
+<h2>Employees:</h2>
+<div>
+  <select (change)="onEmployeeSelect($event)">
+    <option *ngFor="let emp of employees">{{emp}}</option>
+  </select>
+</div>
+
+<h3>Selected employee: {{ selectedEmployee }}</h3>
+
+
+
